@@ -34,6 +34,8 @@ class Sales {
 
     val finalData = dataTemp.union(sumDate)
 
+    finalData.saveAsTextFile("Result")
+
     log.info(s"\n\n\n\n\n\n\n\n\n${finalData.collect.toList}\n\n\n\n\n\n\n\n\n\n")
 
 
